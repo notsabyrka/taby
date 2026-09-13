@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Табы</title>
+  </head>
+  <body>
+    <section class="tabs" aria-labelledby="tabs-title">
+      <div class="tabs__container">
+        <h2 class="tabs__title" id="tabs-title">Living Materials</h2>
+
+        <div
+          class="tabs__list"
+          role="tablist"
+          aria-label="Категории материалов"
+        >
+          <button
+            class="tabs__button tabs__button--active"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="tab-panel-1"
+            id="tab-1"
+          >
+            Архитектура
+          </button>
+
+          <button
+            class="tabs__button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="tab-panel-2"
+            id="tab-2"
+          >
+            Интерьеры
+          </button>
+
+          <button
+            class="tabs__button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="tab-panel-3"
+            id="tab-3"
+          >
+            Путешествия
+          </button>
+
+          <button
+            class="tabs__button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="tab-panel-4"
+            id="tab-4"
+          >
+            Интервью
+          </button>
+
+          <button
+            class="tabs__button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="tab-panel-5"
+            id="tab-5"
+          >
+            Фотографии
+          </button>
+        </div>
+
+        <div class="tabs__content">
+          <article
+            class="tabs__panel tabs__panel--active"
+            id="tab-panel-1"
+            role="tabpanel"
+            aria-labelledby="tab-1"
+            tabindex="0"
+          >
+            <div class="tabs__panel-media">
+              <img
+                class="tabs__panel-image"
+                src="./img/architecture.jpg"
+                width="674"
+                height="360"
+                alt="Современное высотное здание из стекла и металла под облачным небом"
+              />
+            </div>
+
+            <div class="tabs__panel-body">
+              <h3 class="tabs__panel-title">Архитектура света</h3>
+              <p class="tabs__panel-description">
+                Современные здания и работа с естественным освещением.
+              </p>
+
+              <ul
+                class="tabs__stats-list"
+                aria-label="Характеристики категории"
+              >
+                <li class="tabs__stats-item">48 страниц</li>
+                <li class="tabs__stats-item">12 проектов</li>
+                <li class="tabs__stats-item">94%</li>
+              </ul>
+
+              <a class="tabs__panel-link" href="/">Читать материал</a>
+            </div>
+          </article>
+
+          <article
+            class="tabs__panel"
+            id="tab-panel-2"
+            role="tabpanel"
+            aria-labelledby="tab-2"
+            tabindex="0"
+            hidden
+          >
+            <div class="tabs__panel-media">
+              <img
+                class="tabs__panel-image"
+                src="./img/interiors.jpg"
+                width="674"
+                height="360"
+                loading="lazy"
+                alt="Уютная спальня в светлых тонах с двуспальной кроватью и креслом"
+              />
+            </div>
+
+            <div class="tabs__panel-body">
+              <h3 class="tabs__panel-title">Тёплые интерьеры</h3>
+              <p class="tabs__panel-description">
+                Домашние пространства в природной палитре.
+              </p>
+
+              <ul
+                class="tabs__stats-list"
+                aria-label="Характеристики категории"
+              >
+                <li class="tabs__stats-item">16 домов</li>
+                <li class="tabs__stats-item">8 дизайнеров</li>
+                <li class="tabs__stats-item">4 страны</li>
+              </ul>
+
+              <a class="tabs__panel-link" href="/">Открыть подборку</a>
+            </div>
+          </article>
+
+          <article
+            class="tabs__panel"
+            id="tab-panel-3"
+            role="tabpanel"
+            aria-labelledby="tab-3"
+            tabindex="0"
+            hidden
+          >
+            <div class="tabs__panel-media">
+              <img
+                class="tabs__panel-image"
+                src="./img/travel.jpg"
+                width="674"
+                height="360"
+                loading="lazy"
+                alt="Асфальтированная дорога, уходящая через каньон в сторону гор"
+              />
+            </div>
+
+            <div class="tabs__panel-body">
+              <h3 class="tabs__panel-title">Маршруты Европы</h3>
+              <p class="tabs__panel-description">
+                Живописные места и небольшие города.
+              </p>
+
+              <ul
+                class="tabs__stats-list"
+                aria-label="Характеристики категории"
+              >
+                <li class="tabs__stats-item">27 мест</li>
+                <li class="tabs__stats-item">9 городов</li>
+                <li class="tabs__stats-item">6 стран</li>
+              </ul>
+
+              <a class="tabs__panel-link" href="/">Смотреть маршрут</a>
+            </div>
+          </article>
+
+          <article
+            class="tabs__panel"
+            id="tab-panel-4"
+            role="tabpanel"
+            aria-labelledby="tab-4"
+            tabindex="0"
+            hidden
+          >
+            <div class="tabs__panel-media">
+              <img
+                class="tabs__panel-image"
+                src="./img/interviews.jpg"
+                width="674"
+                height="360"
+                loading="lazy"
+                alt="Портрет улыбающегося мужчины крупным планом"
+              />
+            </div>
+
+            <div class="tabs__panel-body">
+              <h3 class="tabs__panel-title">Разговоры с авторами</h3>
+              <p class="tabs__panel-description">
+                Большие интервью с архитекторами и фотографами.
+              </p>
+
+              <ul
+                class="tabs__stats-list"
+                aria-label="Характеристики категории"
+              >
+                <li class="tabs__stats-item">11 гостей</li>
+                <li class="tabs__stats-item">6 часов</li>
+                <li class="tabs__stats-item">100+ фото</li>
+              </ul>
+
+              <a class="tabs__panel-link" href="/">Читать интервью</a>
+            </div>
+          </article>
+
+          <article
+            class="tabs__panel"
+            id="tab-panel-5"
+            role="tabpanel"
+            aria-labelledby="tab-5"
+            tabindex="0"
+            hidden
+          >
+            <div class="tabs__panel-media">
+              <img
+                class="tabs__panel-image"
+                src="./img/photography.jpg"
+                width="674"
+                height="360"
+                loading="lazy"
+                alt="Фотограф стоит на вершине скалы и снимает горный пейзаж"
+              />
+            </div>
+
+            <div class="tabs__panel-body">
+              <h3 class="tabs__panel-title">Фотоистории</h3>
+              <p class="tabs__panel-description">
+                Подборка атмосферных редакционных серий.
+              </p>
+
+              <ul
+                class="tabs__stats-list"
+                aria-label="Характеристики категории"
+              >
+                <li class="tabs__stats-item">320 фото</li>
+                <li class="tabs__stats-item">18 серий</li>
+                <li class="tabs__stats-item">5 выпусков</li>
+              </ul>
+
+              <a class="tabs__panel-link" href="/">Открыть галерею</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
